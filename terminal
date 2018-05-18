@@ -1,0 +1,26 @@
+reactJS-Redux-Mastering-Web-Apps
+
+git clone https://github.com/lcmpbarga/reactJS-Redux-Mastering-Web-Apps.git
+
+===branchs===
+git checkout -b countdownChamp
+git push origin countdownChamp
+
+git checkout master
+git merge countdownChamp
+
+
+
+
+===react===
+npm install -g create-react-app
+npx create-react-app reactJS-Redux
+create-react-app countDownChamp
+
+npm install --save react react-dom
+npm install --save react-bootstrap
+
+
+===terminal_util===
+sudo su (for npm commands)
+rm -r /home/computer/projects/reactjs
