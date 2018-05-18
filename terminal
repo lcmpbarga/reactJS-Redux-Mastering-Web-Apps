@@ -3,8 +3,8 @@ reactJS-Redux-Mastering-Web-Apps
 git clone https://github.com/lcmpbarga/reactJS-Redux-Mastering-Web-Apps.git
 
 ===branchs===
-git checkout -b CountdownChamp
-
+git checkout -b countdownChamp
+git push origin countdownChamp
 
 
 
