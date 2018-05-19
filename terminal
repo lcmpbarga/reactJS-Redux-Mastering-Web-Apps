@@ -9,8 +9,15 @@ git push origin countdownChamp
 git checkout master
 git merge countdownChamp
 
+git checkout  countdownChamp
+=
+git checkout -b reminderPro
+git push origin reminderPro
 
+git checkout master
+git merge reminderPro
 
+git checkout  reminderPro
 
 ===react===
 npm install -g create-react-app
@@ -20,6 +27,7 @@ create-react-app countDownChamp
 npm install --save react react-dom
 npm install --save react-bootstrap
 
+npm install redux react-redux --save
 
 ===terminal_util===
 sudo su (for npm commands)
