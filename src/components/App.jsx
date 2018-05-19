@@ -16,12 +16,12 @@ class App extends Component {
 		const time = new Date();
 		
 		const y = time.getFullYear();
-		const d = this.leading0(time.getDay());
-		const m = this.leading0(time.getMonth());
+		const d = this.leading0(time.getDate());
+		const m = this.leading0(time.getMonth()+1);
 		const h = this.leading0(time.getHours());
 		const mi = this.leading0(time.getMinutes());
 		
-		const currentDateTime = y+"-"+d+"-"+m+"T"+h+":"+mi;
+		const currentDateTime = y+"-"+m+"-"+d+"T"+h+":"+mi;
 
 		return currentDateTime;
 	}
