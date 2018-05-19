@@ -8,8 +8,22 @@ class App extends Component {
 		super(props);
 		this.state = {
 			text: '',
-			dueDate: ''
+			dueDate: this.currentDateTime()
 		}
+	}
+
+	currentDateTime(){
+		const time = new Date();
+		
+		const y = time.getFullYear();
+		const d = this.leading0(time.getDay());
+		const m = this.leading0(time.getMonth());
+		const h = this.leading0(time.getHours());
+		const mi = this.leading0(time.getMinutes());
+		
+		const currentDateTime = y+"-"+d+"-"+m+"T"+h+":"+mi;
+
+		return currentDateTime;
 	}
 
 	addReminder(){
@@ -19,6 +33,10 @@ class App extends Component {
 
 	deleteReminder(id){
 		this.props.deleteReminder(id);
+	}
+
+	leading0(num){
+		return num < 10 ? '0' + num : num; //IF OTIMIZADO!
 	}
 
 	renderReminders(){
@@ -49,7 +67,6 @@ class App extends Component {
 	}
 
 	render(){
-		// console.log('this.props', this.props);
 		return(
 			<div className="App">
 				<div className="title">
@@ -65,6 +82,7 @@ class App extends Component {
 						<input 
 							className="form-control"
 							type="datetime-local"
+							value={this.state.dueDate}
 							onChange={event => this.setState({dueDate: event.target.value})}
 						/>
 					</div>

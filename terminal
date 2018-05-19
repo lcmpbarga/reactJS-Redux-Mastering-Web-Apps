@@ -28,6 +28,9 @@ npm install --save react react-dom
 npm install --save react-bootstrap
 
 npm install redux react-redux --save
+npm install moment --save
+npm install sfcookies
+
 
 ===terminal_util===
 sudo su (for npm commands)
