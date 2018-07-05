@@ -1,5 +1,6 @@
 <p>
   GoalCoach é uma ferramente para criação e finalização de tarefas.</br>
+  Contém login e senha, além de atribuir a tarefa para seus criados e finalizadores.</br>
   =>Stacks</br>
   Front-End: ReactJS</br>
   Back-End: Firebase</br>
